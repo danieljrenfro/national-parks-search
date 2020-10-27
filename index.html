@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>National Parks Search Tool</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>National Parks Search Tool</h1>
+  </header>
+  <section>
+    <form action="" id="search-tool">
+      <label for="state-search">Choose a State</label>
+      <input type="text" id="state-search" name="state-search" placeholder="Full State Name: e.g. Texas" required >
+      <label for="results-number">Max Number of Results</label>
+      <input type="number" id="results-number" name="results-number" value="10" placeholder="10">
+      <button type="submit">Find Parks</button>
+    </form>
+  </section>
+  <p id="js-error-message"></p>
+
+  <section id="search-results" class="hidden">
+    <ul class="results-list">
+    </ul>
+  </section>
+  
+  <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script src="index.js"></script>
+</body>
+</html>
